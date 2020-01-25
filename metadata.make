@@ -1,0 +1,2 @@
+APPNAME=smolisp
+APPVERSION=0.0.1

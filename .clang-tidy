@@ -1,0 +1,9 @@
+Checks:          'clang-diagnostic-*,clang-analyzer-*,readability-*,bugprone-*,misc-*,google-runtime-int,-clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,-clang-analyzer-security.insecureAPI.strcpy,llvm-header-guard,llvm-include-order'
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*'
+FormatStyle: 'file'
+CheckOptions:
+  - key:             google-runtime-int.TypeSufix
+    value:           '_t'
+  - key:             bugprone-unused-return-value.CheckedFunctions
+    value:           'malloc;fgets'
